@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dolce Vita</title>
+    <meta charset="utf-8">
+
+    <!--responsive for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            position: relative;
+            height: 100%;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        /*text color set by div*/
+        /*header compnay name + section header*/
+        h1 {
+            font-family: 'Baskervville', serif;
+            font-size: 64px;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*subheader*/
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: normal;
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+        /*sub title that is above the line*/
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*content + sub company name + footer*/
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*footer grey*/
+        h5 {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            color: #7D8184;
+        }
+
+        header {
+            width: 100%;
+            height: 150px;
+            left: 0px;
+            top: 0px;
+            background: #1D1D1F;
+        }
+
+        .htitle {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .bookNow {
+            float: left;
+            color: #FFF;
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Lato', sans-serif;
+            font-size: 10px;
+            border-style: groove;
+            border-color: #FFF;
+        }
+
+        .lang {
+            float: right;
+            color: #FFF;
+            margin: 15px;
+            font-family: 'Lato', sans-serif;
+            font-size: 10px;
+        }
+
+        nav {
+            color: #FFF;
+            height: 20px;
+            padding: 10px 10px;
+            /*position: fixed;  Set the navbar to fixed position */
+            width: 100%;  
+        }
+
+        nav ul, nav li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul {
+            width: 100%;
+            text-align: center;
+            
+        }
+        ul#menu li {     
+            display: inline-block;   
+            padding-left: 5px;
+            margin-left: 10px;
+        }
+        nav a {
+            display: block;
+            line-height: 20px;
+            margin: 0 0 0 20px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Lato', sans-serif;
+            font-size: 10px;
+            text-transform: capitalize;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid white;
+        }
+
+        .wrapper {
+            margin: 0px 50px;
+            padding: 20px;
+            min-width:800px;
+            background-color: #fff;
+        }
+
+        .section {
+            margin: 70px 0 50px 0;
+        }
+
+        .content {
+            width: 50%;
+            margin: auto;
+        }
+
+        .subheader {
+            display: table;
+            width: 100%;
+        }
+
+        .bg {
+            margin: 30px 0;
+            padding: 20px;
+            min-width:800px;
+            background-color: #F0EDE8;
+            position: relative;
+        }
+
+        .img1 {
+            background-color: #1D1D1F;
+            width: 290px;
+            height: 380px;
+            margin: 100px 0 50px 60px;
+            /*position: absolute;
+            top: 100px;
+            left: 60px;*/
+        }
+
+        .img2 {
+            background-color: #1D1D1F;
+            width: 275px;
+            height: 160px;
+            top: 50px;
+            left: 470px;
+            position: absolute;
+        }
+
+        .img3 {
+            background-color: #1D1D1F;
+            width: 380px;
+            height: 200px;
+            top: 250px;
+            left: 700px;
+            position: absolute;
+        }
+
+        footer {
+            height: 450px;
+            width: 100%;
+            background: #1D1D1F;
+            padding: 15px;
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            color: #fff;
+        }
+
+        .footer {
+            width: 70%;
+            margin: auto;
+            display: table;
+            padding: 40px 0;
+        }
+
+        .fservice {
+            width: 35%;
+            display: table-cell;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-inline-start: 0px;
+            margin-top: 20px;
+        }
+
+         li {
+            margin: 20px 0;
+            padding-right: 30%;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            color: #FFF;
+        }
+
+        .fnews {
+            width: 50%;
+            display: table-cell;
+        }
+
+        .fsocial {
+            display: table-cell;
+        }
+
+        .flang {
+            width: 21%;
+            margin: auto;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="bookNow">
+            BOOK NOW
+        </div>
+        <div class="lang">
+            ENGLISH <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="htitle">
+            <h1>DOLCE VITA</h1>
+            <h4>PHOTOGRAPHY STUDIO</h4>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="about.html" class="active">ABOUT US</a></li> <!--Active on about.html page-->
+                <li><a href="people.html">OUR PEOPLE</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="wallart.html">WALLART</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="testimonial.html">TESTIMONIAL</a></li>
+                <li><a href="charity.html">CHARITY</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="privacy.html">PRIVACY</a></li>
+             </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="section">
+            <h1>ABOUT</h1>
+        </div>
+        <div class="content">
+            
+            <div class="subheader">
+                <div style="display: table-row">
+                    <div style="width: 50%; display: table-cell;"><h2>DOLCE VITA STUDIO</h2></div>  <!--Width unable to follow content, unable to assign 2 display-->
+                    <div style="vertical-align: top; display: table-cell;"><h3>ABOUT US<hr></h3></div>
+                </div>
+            </div>
+            
+            <h4>
+                Dolce Vita Studio have specialised exclusively in Animal Art Photography since 2006. We are one of the longest standing photography studios in Singapore to do so. We don’t just photograph pets, we aim to capture the bond between pets and their people. It is our passion, our love, our life. We want to spread the joy of animal photography and we welcome you and your little one to be a part of it. Every pet deserves to be celebrated and have their story told!
+                <br><br>
+                At Dolce Vita Studios, it’s not just about photography, it’s about creating art - just as your pet deserves. Rest assured that you are in good hands.
+            </h4>
+        </div>
+        <div class="bg">
+            <div class="img1">
+
+            </div>
+            <div class="img2">
+                
+            </div>
+            <div class="img3">
+                
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="htitle">
+            <h1 style="font-size: 36px;">DOLCE VITA</h1>
+            <h4 style="font-size: 10px;">PHOTOGRAPHY STUDIO</h4>
+        </div>
+
+        <div class="footer">
+            <div class="fservice">
+                <h5>Services</h5>
+                <br>
+                <ul>
+                    <li><a href="privacy.html"></a>PRIVACY CENTER</li>
+                    <li>PRESS OFFICES</li>
+                    <li>PRESS AREA</li>
+                    <li>CAREER</li>
+                    <li><a href="covid.html">COVID-19 UPDATE</a></li>
+                </ul>
+
+
+            </div>
+            <div class="fnews">
+                <h5>Newsletter sign up</h5>
+                <br>
+                <ul>
+                    <li>Email</li>
+                    <li style="font-size: 8px; color: #7D8184;">ADD YOUR EMAIL ADDRESS<hr></li>
+                    <li>SUBMIT</li>
+                </ul>
+
+            </div>
+            <div class="fsocial">
+                <h5>Social</h5>
+                <br>
+                <ul>
+                    <li></li>
+                    <li><h5>Official Website</h5></li>
+                    <li><a href="index.html">DOLCEVITA.COM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flang">
+            CHANGE YOUR LANGUAGE<h5 style="display: inline; padding-left: 30px;">ENGLISH <i class="fa fa-chevron-down"></i></h5>
+        </div>
+    </footer>
+</body>
+</html>
