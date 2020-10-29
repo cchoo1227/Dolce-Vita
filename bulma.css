@@ -463,6 +463,7 @@ a.box:active {
   padding-top: calc(0.5em - 1px);
   text-align: center;
   white-space: nowrap;
+  border-radius: 0; /*Added*/
 }
 
 .button strong {
@@ -511,18 +512,22 @@ a.box:active {
 .button.is-text {
   background-color: transparent;
   border-color: transparent;
+  color: #fff;
+  /*
   color: #4a4a4a;
-  text-decoration: underline;
+  text-decoration: underline;*/
 }
 
 .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
-  background-color: whitesmoke;
-  color: #363636;
+  border-bottom: 2px solid white;
+  /*background-color: #e8e8e8;
+  color: #363636;*/
 }
 
 .button.is-text:active, .button.is-text.is-active {
-  background-color: #e8e8e8;
-  color: #363636;
+  border-bottom: 2px solid white;
+  /*background-color: #e8e8e8;
+  color: #363636;*/
 }
 
 .button.is-text[disabled],

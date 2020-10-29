@@ -219,8 +219,9 @@ footer {
 
 .footer li {
     margin: 20px 0;
-    padding-right: 30%;
 }
+
+
 
 .footer a {
     display: block;
@@ -234,6 +235,11 @@ footer {
     display: table-cell;
 }
 
+/*For email hr*/
+.fnews li {
+    padding-right: 30%;
+}
+
 .fsocial {
     display: table-cell;
 }
@@ -241,6 +247,38 @@ footer {
 .flang {
     width: 270px;
     margin: auto;
+}
+
+/*Footer email submit from bootstrap*/
+.md-form {
+    position: relative;
+}
+
+.md-form input[type="email"]:not(.browser-default) {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.md-form .form-control {
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff;
+    
+}
+
+.md-form .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none
 }
 
 .mobile-nav {
