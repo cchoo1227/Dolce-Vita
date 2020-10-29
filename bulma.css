@@ -8063,6 +8063,10 @@ label.panel-block:hover {
   }
 }
 
+.container > .columns {
+  margin-top: 50px;
+}
+
 .columns {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -11530,6 +11534,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
+}
+
+.section{padding:3rem 1.5rem}
+
+@media screen and (min-width:1024px){
+  .section.is-medium{padding:9rem 1.5rem}
+  .section.is-large{padding:18rem 1.5rem}
 }
 
 

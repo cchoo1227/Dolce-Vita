@@ -140,6 +140,52 @@ ul#menu li {
     border-bottom: 2px solid white;
 }
 
+.content {
+    width: 60%;
+    margin: auto;
+}
+
+.subheader {
+    display: table;
+    width: 100%;
+}
+
+.bg {
+    margin: 30px 0;
+    padding: 20px;
+    min-width:800px;
+    background-color: #F0EDE8;
+    position: relative;
+}
+
+.img1 {
+    background-color: #1D1D1F;
+    width: 290px;
+    height: 380px;
+    margin: 100px 0 50px 60px;
+    /*position: absolute;
+    top: 100px;
+    left: 60px;*/
+}
+
+.img2 {
+    background-color: #1D1D1F;
+    width: 275px;
+    height: 160px;
+    top: 50px;
+    left: 470px;
+    position: absolute;
+}
+
+.img3 {
+    background-color: #1D1D1F;
+    width: 380px;
+    height: 200px;
+    top: 250px;
+    left: 700px;
+    position: absolute;
+}
+
 footer {
     height: 450px;
     width: 100%;
