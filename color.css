@@ -42,10 +42,20 @@ h3 {
     padding: 0;
 }
 
-/*content + sub company name + footer*/
+/*sub company name + footer*/
 h4 {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/*content*/
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
     font-weight: normal;
     font-style: normal;
     margin: 0;
