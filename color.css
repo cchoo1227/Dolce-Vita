@@ -221,8 +221,6 @@ footer {
     margin: 20px 0;
 }
 
-
-
 .footer a {
     display: block;
     text-decoration: none;
@@ -268,7 +266,7 @@ footer {
 
 
 .md-form .form-control {
-    width: 70%;
+    width: 200px;
     height: auto;
     background-color: transparent;
     border-radius: 0;
