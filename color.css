@@ -198,7 +198,7 @@ ul#menu li {
 }
 
 footer {
-    height: 450px;
+    height: 460px;
     width: 100%;
     background: #1D1D1F;
     padding: 15px;
@@ -213,7 +213,7 @@ footer {
     width: 70%;
     margin: auto;
     display: table;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .fservice {
@@ -224,7 +224,7 @@ footer {
 .footer ul {
     list-style-type: none;
     padding-inline-start: 0px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .footer li {
@@ -236,6 +236,10 @@ footer {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     color: #FFF;
+}
+
+.footer a:hover {
+    color: #ced4da;
 }
 
 .fnews {
@@ -252,8 +256,18 @@ footer {
     display: table-cell;
 }
 
+.fsocial i {
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin: 0 20px 0 0;
+}
+
+.fsocial i:hover {
+    color: #ced4da;
+}
+
 .flang {
-    width: 270px;
+    width: 290px;
     margin: auto;
 }
 
