@@ -155,16 +155,9 @@ ul#menu li {
     margin: auto;
 }
 
-.subheader {
-    display: table;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 .bg {
     margin: 30px 0;
     padding: 20px;
-    min-width:800px;
     background-color: #F0EDE8;
     position: relative;
 }
