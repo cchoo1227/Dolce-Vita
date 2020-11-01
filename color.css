@@ -264,6 +264,24 @@ footer {
     margin: auto;
 }
 
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    border-style: none;
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    background-color: #1D1D1F;
+    color: #fff;
+    text-align: center;
+}
+
+.btn button:hover {
+    background-color: #ced4da;
+    color: #1D1D1F;
+}
+
 /*Footer email submit from bootstrap*/
 .md-form {
     position: relative;
