@@ -282,6 +282,14 @@ footer {
     color: #1D1D1F;
 }
 
+.textCenter {
+    text-align: center;
+}
+
+.nogap {
+    margin-top: 0;
+}
+
 /*Footer email submit from bootstrap*/
 .md-form {
     position: relative;
