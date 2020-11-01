@@ -358,7 +358,8 @@ footer {
 footer.mobile {
     display: none;
     height: auto;
-    font-size: 10px;
+    font-size: 12px;
+    padding: 0.75rem;
 }
 
 footer.mobile a {
@@ -374,9 +375,17 @@ footer.mobile h5 {
     margin-bottom: 10px;
 }
 
-footer.mobile > .services ul, footer.mobile > .footerBtm {
+footer.mobile ul {
+    list-style-type: none;
+}
+
+footer.mobile .fbody {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0 0;
+}
+
+footer.mobile > div > div > div:first-child {
     margin-bottom: 20px;
 }
 
