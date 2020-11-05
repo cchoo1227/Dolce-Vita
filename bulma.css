@@ -7681,6 +7681,7 @@ label.panel-block:hover {
   .column.is-offset-3-desktop {
     margin-left: 25%;
   }
+  
   .column.is-4-desktop {
     flex: none;
     width: 33.33333%;
