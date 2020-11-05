@@ -246,11 +246,13 @@ footer {
     background-color: #1D1D1F;
     color: #fff;
     text-align: center;
+    border: 1px solid #1D1D1F;
 }
 
 .btn button:hover {
-    background-color: #ced4da;
+    background-color: #fff;
     color: #1D1D1F;
+    
 }
 
 .textCenter {
