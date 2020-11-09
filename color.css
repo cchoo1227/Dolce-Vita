@@ -248,7 +248,7 @@ footer {
     text-align: center;
 }
 
-.btn button {
+.btn button, .btn a {
     border-style: none;
     font-family: 'Baskervville', serif;
     font-size: 18px;
@@ -259,9 +259,10 @@ footer {
     padding: 9px 25px;
     text-transform: uppercase;
     transition: all 0.3s;
+    display: inline-block;
 }
 
-.btn button:hover {
+.btn button:hover, .btn a:hover {
     background-color: #fff;
     color: #1D1D1F;
     

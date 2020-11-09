@@ -36,10 +36,10 @@
         
         <nav class="nav">
             <ul>
-                <li><a href="about.html" class="active">ABOUT US</a></li> <!--Active on about.html page-->
+                <li><a href="about.html">ABOUT US</a></li> <!--Active on about.html page-->
                 <li><a href="people.html">OUR PEOPLE</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="wallart.html">WALLART</a></li>
+                <li><a href="wallart.html" class="active">WALLART</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="packages.html">PACKAGES</a></li>
                 <li><a href="testimonial.html">TESTIMONIAL</a></li>
@@ -144,12 +144,40 @@
               </div> 
         </div>
 
+
         <div class="container carousel">
             <div class="glide2">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide">
+                        <img src="images/storyboard-1.png" height="470px">
+                    </li>
+                    <li class="glide__slide">
                         <img src="images/statement-1.png" height="470px">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="images/statement-1.png" height="470px">
+                    </li>
+                  </ul>
+                </div>   
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/arrow_back.svg"></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/arrow_forward.svg"></i></button>
+                  </div>
+              </div>
+              <div class="columns">
+                  <div class="column">
+                    <h6><b>Storyboard -</b> five selected images including a center statement piece <i>(Popular!)</i></h6>
+                  </div>
+              </div> 
+        </div>
+
+        <div class="container carousel">
+            <div class="glide3">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="images/narrative-1.png" height="470px">
                     </li>
                     <li class="glide__slide">
                         <img src="images/statement-1.png" height="470px">
@@ -173,11 +201,11 @@
         </div>
 
         <div class="container carousel">
-            <div class="glide3">
+            <div class="glide4">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="images/statement-1.png" height="470px">
+                        <img src="images/expressions-1.png" height="470px">
                     </li>
                     <li class="glide__slide">
                         <img src="images/statement-1.png" height="470px">
@@ -201,11 +229,11 @@
         </div>
 
         <div class="container carousel">
-            <div class="glide4">
+            <div class="glide5">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="images/statement-1.png" height="470px">
+                        <img src="images/square-1.png" height="470px">
                     </li>
                     <li class="glide__slide">
                         <img src="images/statement-1.png" height="470px">
@@ -233,7 +261,7 @@
                 <div class="column">
                     <h6>The styles shown are just a guideline. All pieces can be customised in size and style to suit your needs.</h6>
                     <div class="btn">
-                        <button>View Packages</button>
+                        <a href="packages.html">View Packages</a>
                     </div>
                 </div>
             </div>
@@ -337,6 +365,7 @@
     let slide2 = new Glide('.glide2').mount();
     let slide3 = new Glide('.glide3').mount();
     let slide4 = new Glide('.glide4').mount();
+    let slide5 = new Glide('.glide5').mount();
 
 </script>
 </body>
