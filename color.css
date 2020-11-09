@@ -386,6 +386,57 @@ footer {
 
 }
 
+/*OUR PEOPLE*/
+.people .title {
+    font-family: Baskervville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.people .column img {
+    width: 100%;
+    height: 420px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.people .column img {
+    width: 100%;
+    height: 380px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.people .desktop .columns:nth-child(2) {
+    margin-top: 90px;
+}
+
+.people .desktop, .people .mobile {
+    margin: 65px 0 42px;
+}
+
+.people .mobile {
+    display: none;
+}
+
+.people .mobile .column {
+    margin-bottom: 45px;
+}
+
+@media only screen and (max-width: 820px) { 
+
+    .people .mobile {
+        display: block;
+    }
+
+    .people .desktop {
+        display: none;
+    }
+
+}
+
 
 /*MOBILE NAV*/
 
