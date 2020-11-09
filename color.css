@@ -62,6 +62,15 @@ h6 {
     padding: 0;
 }
 
+/*content links*/
+
+.links {
+    color: #4a4a4a;
+    display: inline-block;
+    border-bottom: 1px solid #4a4a4a ;
+    margin-top: 60px;
+}
+
 /*footer grey*/
 h5 {
     font-family: 'Lato', sans-serif;
@@ -247,6 +256,9 @@ footer {
     color: #fff;
     text-align: center;
     border: 1px solid #1D1D1F;
+    padding: 9px 25px;
+    text-transform: uppercase;
+    transition: all 0.3s;
 }
 
 .btn button:hover {
@@ -294,6 +306,85 @@ footer {
     -webkit-box-shadow: none;
     box-shadow: none
 }
+
+/*CAROUSEL*/
+.wallart .container:first-child h6{
+    font-weight: bold;
+}
+
+.carousel.container:nth-child(2) {
+    margin-top: 60px;
+}
+
+.carousel.container {
+    margin-bottom: 75px;
+}
+
+.carousel.container h6 {
+    text-align: center;
+}
+
+.wallart .container:last-child {
+    margin-bottom: 27px;
+}
+
+.wallart .container:last-child h6 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.wallart .carousel.container .columns {
+    margin-top: 0;
+}
+
+.glide--slider {
+    position: relative;
+}
+
+.glide__track {
+    border: 30px solid #F0EDE8;
+}
+
+.glide__slide {
+    height: auto !important;
+}
+
+.glide__slide img {
+    height: 100%;
+}
+
+.glide__arrows .glide__arrow {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.glide__arrows .glide__arrow--left {
+    left: 0.3em;
+}
+
+.glide__arrows .glide__arrow--right {
+    right: 0.3em;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .glide__track {
+        border: 15px solid #F0EDE8;
+    }
+
+    .glide__arrows .glide__arrow--left {
+        left: -0.4em;
+    }
+    
+    .glide__arrows .glide__arrow--right {
+        right: -0.4em;
+    }
+
+}
+
 
 /*MOBILE NAV*/
 
