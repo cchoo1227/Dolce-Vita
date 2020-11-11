@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dolce Vita</title>
+    <meta charset="utf-8">
+
+    <!--responsive for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="color.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+        body {
+            background-color: #F0EDE8;
+        }
+
+        .img-container{
+            position:relative;
+            display:inline-block;
+        }
+
+        .img-container .overlay{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            opacity: 0;
+            transition:opacity 500ms ease-in-out;
+        }
+
+        .img-container:hover .image{
+            filter: brightness(50%);
+        }
+
+        .img-container:hover .overlay{
+            opacity: 1;
+        }
+
+        .overlay span{
+            position:absolute;
+            width: 80%;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color: #fff;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<!--HEADER START-->
+<header>
+    <div class="bookNow">
+        BOOK NOW
+    </div>
+    <div class="lang">
+        ENGLISH <i class="fa fa-chevron-down"></i>
+    </div>
+    <div class="htitle">
+        <h1>DOLCE VITA</h1>
+        <h4>PHOTOGRAPHY STUDIO</h4>
+    </div>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="about.html" >ABOUT US</a></li> <!--Active on about.html page-->
+            <li><a href="people.html">OUR PEOPLE</a></li>
+            <li><a href="wallart.html">WALLART</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="testimonial.html" class="active">TESTIMONIAL</a></li>
+            <li><a href="charity.html">CHARITY</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="privacy.html">PRIVACY</a></li>
+         </ul>
+    </nav>
+</header>
+
+<!--Mobile header-->
+<nav class="mobile-nav navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="about.html">
+        <img src="images/DV.svg" height="28">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="about.html">ABOUT US</a>
+            <a class="navbar-item" href="people.html">OUR PEOPLE</a>
+            <a class="navbar-item" href="wallart.html">WALLART</a>
+            <a class="navbar-item" href="gallery.html">GALLERY</a>
+            <a class="navbar-item" href="packages.html">PACKAGES</a>
+            <a class="navbar-item" href="blog.html">BLOG</a>
+            <a class="navbar-item" href="testimonial.html">TESTIMONIAL</a>
+            <a class="navbar-item" href="charity.html">CHARITY</a>
+            <a class="navbar-item" href="faq.html">FAQ</a>
+            <a class="navbar-item" href="contact.html">CONTACT US</a>
+            <a class="navbar-item" href="privacy.html">PRIVACY</a>
+    
+    </div>
+    
+        <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button">
+                    <strong>BOOK NOW</strong>
+                </a>
+                    ENGLISH <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+</nav>
+
+<!--HEADER ENDS-->
+
+
+    <section class="section">
+        <div class="container">
+            <div class="sectionTitle">
+                <h1>STORIES</h1>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <h6>We love working with animals, but we also love hearing what people think about us! Take a look at some of our stories over the years.</h6>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content">       
+                        <div class="columns">
+                            <div class="column" style="flex-grow: 1.2;"><h2>What our customers say about us?</h2></div>
+                            <div class="column" style="margin: auto 0;"><h3>&nbsp;<hr></h3></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter"> 
+                <div class="column">
+                    <img src="images/test1.png">
+                </div>
+                <div class="column">
+                    <img src="images/test2.png">
+                </div>
+                <div class="column">
+                    <img src="images/test3.png">
+                </div>
+            </div>  
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content textCenter">       
+                        <h6><strong>“Excellent service and amazing results - we are more than happy!”</strong>
+                            <br><br>
+                            <i>- Georgina and her dog Russell, September 2020</i></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter">
+                <div class="column">
+                    <img src="images/test4.png">
+                </div>
+                <div class="column">
+                    <img src="images/test5.png">
+                </div>
+                <div class="column">
+                    <img src="images/test6.png">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content textCenter">       
+                        <h6><strong>“Best experience ever. Thank you for capturing the essence of our babies and making the process so much fun.”</strong>
+                            <br><br>
+                            <i>- Travis, Linda and their dogs Kiara & Doodles, April 2020</i></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter">
+                <div class="column">
+                    <img src="images/test7.png">
+                </div>
+                <div class="column">
+                    <img src="images/test8.png">
+                </div>
+                <div class="column">
+                    <img src="images/test9.png">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content textCenter">       
+                        <h6><strong>“Brilliant work. Everything was taken care of for us and the results turned out stunning.”</strong>
+                            <br><br>
+                            <i>- Alicia, Josh, their cat Tiberius and their dog Romeo, February 2020</i></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter">
+                <div class="column">
+                    <img src="images/test10.png">
+                </div>
+                <div class="column">
+                    <img src="images/test11.png">
+                </div>
+                <div class="column">
+                    <img src="images/test12.png">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content textCenter">       
+                        <h6><strong>“A precious memory our family will treasure forever. A must do for all pet owners!”</strong>
+                            <br><br>
+                            <i>- Deb, Ida and their dogs Jetson & Olliee, January 2020</i></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter">
+                <div class="column">
+                    <img src="images/test13.png">
+                </div>
+                <div class="column">
+                    <img src="images/test14.png">
+                </div>
+                <div class="column">
+                    <img src="images/test15.png">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content textCenter">       
+                        <h6><strong>“A fantastic experience all round and exceptional results - LOVE THEM.”</strong>
+                            <br><br>
+                            <i>- Mark and his cat Milo, December 2019</i></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content">       
+                        <div class="columns">
+                            <div class="column" style="flex-grow: 1;"><h2>What the media says about us?</h2></div>
+                            <div class="column" style="margin: auto 0;"><h3>&nbsp;<hr></h3></div>
+                        </div>
+                        <h6>
+                            At Dolce Vita Studio, we are honoured to have been featured in the media so frequently. 
+                            Media work is something we respect and we enjoy reading these articles a lot. We love 
+                            what we do, we love sharing what we do and we love letting the public see what goes on 
+                            behind the scenes. Below, you will find the details and links to some of our favourite 
+                            media articles.
+                        </h6>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter">
+                <div class="column"> 
+                    <div class="img-container">
+                        <img src="images/test16.png" class="image">
+                        <div class="overlay">
+                            <span>
+                                Read the full article
+                            </span>
+                        </div>
+                    </div>
+                    <h6 style="text-align: left; padding: 0 20px;"><strong>The Work and Magic Behind the Art of Pet Photography with Dolce Vita Studio.</strong></h6>
+                </div>
+                <div class="column">
+                    <div class="img-container">
+                        <img src="images/test17.png" class="image">
+                        <div class="overlay">
+                            <span>
+                                Read the full article
+                            </span>
+                        </div>
+                    </div>
+                    <h6 style="text-align: left; padding: 0 20px;"><strong>Dolce Vita’s pet photographer Selina Liu wins gold at the AIPP Awards 2020.</strong></h6>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                <!--Gives the wrapper-->
+                    <div class="content">       
+                        <div class="columns">
+                            <div class="column" style="flex-grow: 0.8;"><h2>Our Awards & Nominations</h2></div>
+                            <div class="column" style="margin: auto 0;"><h3>For the Year 2020<hr></h3></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter">
+                <div class="column">
+                    <img src="images/test18.png">
+                    <h6>AIPP NATIONAL AWARDS 2020 
+                        <br>
+                        GOLD AWARD</h6>
+                </div>
+                <div class="column">
+                    <img src="images/test19.png" style="margin: 20px 0 20px 0">
+                    <h6>INTERNATIONAL PHOTOGRAPHY AWARDS 2020
+                        <br>
+                        HONOURABLE MENTION</h6>
+                </div>
+                <div class="column">
+                    <img src="images/test20.png" style="margin: 0 0 20px 0">
+                    <h6>SINGAPORE OUTSTANDING AWARDS 2020
+                        <br>
+                        GOLD AWARD</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!--FOOTER START-->
+  <footer class="desktop">
+    <div class="htitle">
+        <h1 style="font-size: 36px;">DOLCE VITA</h1>
+        <h4 style="font-size: 10px;">PHOTOGRAPHY STUDIO</h4>
+    </div>
+
+    <div class="footer">
+        <div class="fservice">
+            <ul>
+                <li><h5>Services</h5><br></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="wallart.html">WALLART</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="covid.html">COVID-19 UPDATE</a></li>
+            </ul>
+        </div>
+        <div class="fnews">
+            <ul>
+                <li><h5>Newsletter sign up</h5><br></li>
+                <li>Email</li>
+                <li><div class="md-form">
+                    <input type="email" id="form1" class="form-control" placeholder="ADD YOUR EMAIL ADDRESS">
+                </div>
+               
+                <button class="button is-text">SUBMIT</button></li>
+            </ul>
+
+        </div>
+        <div class="fsocial">
+            <ul>
+                <li><h5>Social</h5></li>
+                <i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-share-alt"></i>
+                <li><h5>Official Website</h5></li>
+                <li><a href="index.html">DOLCEVITA.COM</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flang">
+        CHANGE YOUR LANGUAGE<h5 style="display: inline; padding-left: 30px;">ENGLISH <i class="fa fa-chevron-down"></i></h5>
+    </div>
+</footer>
+
+<footer class="mobile">
+    <div class="htitle">
+        <h1 style="font-size: 36px;">DOLCE VITA</h1>
+        <h4 style="font-size: 10px;">PHOTOGRAPHY STUDIO</h4>
+    </div>
+
+    <div class="fbody">
+    <div>
+        <div class="services">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="wallart.html">WALLART</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="covid.html">COVID-19 UPDATE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footerBtm">
+
+        <div class="newsletter">
+            <h5>Choose Your Language</h5>    
+            <div>ENGLISH <i class="fa fa-chevron-down"></i></div>
+        </div>
+
+           <div class="social">
+               <h5>Social</h5>
+               <i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-share-alt"></i>
+            </div>
+
+
+    </div>
+</div>
+
+</footer>
+<!--FOOTER END-->
+<script src="scripts/navbar.js"></script>
+</body>
+</html>

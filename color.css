@@ -270,6 +270,7 @@ footer {
 
 .textCenter {
     text-align: center;
+    margin: auto;
 }
 
 .nogap {
