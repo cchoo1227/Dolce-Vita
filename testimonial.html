@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="color.css">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
 
     <style>
         
@@ -52,6 +54,17 @@
             font-size: 16px;
         }
 
+        .title a {
+            color:#4a4a4a;
+        }
+
+        .title a:hover {
+            color: #BDA55D;
+        }
+
+        .award h6{
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -138,8 +151,10 @@
             </div>
 
             <div class="columns">
-                <div class="column">
-                    <h6>We love working with animals, but we also love hearing what people think about us! Take a look at some of our stories over the years.</h6>
+                <div class="column title">
+                    <h6>We love working with animals, but we also love hearing what people think about us! Take a look at some of our stories over the years
+                        - <a href="#customer">what our customers say</a>, <a href="#media">what the media says</a>, <a href="#award">our awards and nominations.</a>
+                    </h6>
                 </div>
             </div>
 
@@ -148,7 +163,7 @@
                 <!--Gives the wrapper-->
                     <div class="content">       
                         <div class="columns">
-                            <div class="column" style="flex-grow: 1.2;"><h2>What our customers say about us?</h2></div>
+                            <div class="column" style="flex-grow: 1.2;" id="customer"><h2>What our customers say about us?</h2></div>
                             <div class="column" style="margin: auto 0;"><h3>&nbsp;<hr></h3></div>
                         </div>  
                     </div>
@@ -173,7 +188,7 @@
                     <div class="content textCenter">       
                         <h6><strong>“Excellent service and amazing results - we are more than happy!”</strong>
                             <br><br>
-                            <i>- Georgina and her dog Russell, September 2020</i></h6>
+                            <i style="font-family: Baskervville;">- Georgina and her dog Russell, September 2020</i></h6>
                     </div>
                 </div>
             </div>
@@ -196,7 +211,7 @@
                     <div class="content textCenter">       
                         <h6><strong>“Best experience ever. Thank you for capturing the essence of our babies and making the process so much fun.”</strong>
                             <br><br>
-                            <i>- Travis, Linda and their dogs Kiara & Doodles, April 2020</i></h6>
+                            <i style="font-family: Baskervville;">- Travis, Linda and their dogs Kiara & Doodles, April 2020</i></h6>
                     </div>
                 </div>
             </div>
@@ -219,7 +234,7 @@
                     <div class="content textCenter">       
                         <h6><strong>“Brilliant work. Everything was taken care of for us and the results turned out stunning.”</strong>
                             <br><br>
-                            <i>- Alicia, Josh, their cat Tiberius and their dog Romeo, February 2020</i></h6>
+                            <i style="font-family: Baskervville;">- Alicia, Josh, their cat Tiberius and their dog Romeo, February 2020</i></h6>
                     </div>
                 </div>
             </div>
@@ -242,7 +257,7 @@
                     <div class="content textCenter">       
                         <h6><strong>“A precious memory our family will treasure forever. A must do for all pet owners!”</strong>
                             <br><br>
-                            <i>- Deb, Ida and their dogs Jetson & Olliee, January 2020</i></h6>
+                            <i style="font-family: Baskervville;">- Deb, Ida and their dogs Jetson & Olliee, January 2020</i></h6>
                     </div>
                 </div>
             </div>
@@ -265,7 +280,7 @@
                     <div class="content textCenter">       
                         <h6><strong>“A fantastic experience all round and exceptional results - LOVE THEM.”</strong>
                             <br><br>
-                            <i>- Mark and his cat Milo, December 2019</i></h6>
+                            <i style="font-family: Baskervville;">- Mark and his cat Milo, December 2019</i></h6>
                     </div>
                 </div>
             </div>
@@ -275,7 +290,7 @@
                 <!--Gives the wrapper-->
                     <div class="content">       
                         <div class="columns">
-                            <div class="column" style="flex-grow: 1;"><h2>What the media says about us?</h2></div>
+                            <div class="column" style="flex-grow: 1;" id="media"><h2>What the media says about us?</h2></div>
                             <div class="column" style="margin: auto 0;"><h3>&nbsp;<hr></h3></div>
                         </div>
                         <h6>
@@ -314,19 +329,46 @@
                 </div>
             </div>
 
+            <div class="container carousel">
+                <div class="glide2">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="images/storyboard-1.png" height="470px">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="images/test1.png" height="470px">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="images/statement-1.png" height="470px">
+                        </li>
+                      </ul>
+                    </div>   
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/arrow_back.svg"></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/arrow_forward.svg"></button>
+                      </div>
+                  </div>
+                  <div class="columns">
+                      <div class="column">
+                        <h6><b>Storyboard -</b> five selected images including a center statement piece <i>(Popular!)</i></h6>
+                      </div>
+                  </div> 
+            </div>
+
             <div class="columns">
                 <div class="column">
                 <!--Gives the wrapper-->
                     <div class="content">       
                         <div class="columns">
-                            <div class="column" style="flex-grow: 0.8;"><h2>Our Awards & Nominations</h2></div>
+                            <div class="column" style="flex-grow: 0.8;" id="award"><h2>Our Awards & Nominations</h2></div>
                             <div class="column" style="margin: auto 0;"><h3>For the Year 2020<hr></h3></div>
                         </div>  
                     </div>
                 </div>
             </div>
 
-            <div class="columns is-variable is-8 textCenter">
+            <div class="columns is-variable is-8 textCenter award">
                 <div class="column">
                     <img src="images/test18.png">
                     <h6>AIPP NATIONAL AWARDS 2020 
@@ -344,6 +386,52 @@
                     <h6>SINGAPORE OUTSTANDING AWARDS 2020
                         <br>
                         GOLD AWARD</h6>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter award">
+                <div class="column">
+                    <img src="images/test20.png" style="margin: 0 0 20px 0">
+                    <h6>MASTER BREEDERS ASSOCIATION DOG OWNERS CHOICE AWARDS 2020
+                        <br>
+                        BEST PHOTOGRAPHER / ARTIST</h6>
+                </div>
+                <div class="column">
+                    <img src="images/test20.png" style="margin: -0 0 20px 0">
+                    <h6>CREATIVE ASIA INTERNATIONAL PHOTOGRAPHY AWARDS 2020
+                        <br>
+                        TOP FINALIST</h6>
+                </div>
+                <div class="column">
+                    <img src="images/test21.png" style="margin: 20px 0 30px 0">
+                    <h6>WPPI INTERNATIONAL AWARDS 2020
+                        <br>
+                        GOLD AWARD</h6>
+                </div>
+            </div>
+
+            <div class="columns is-variable is-8 textCenter award">
+                <div class="column">
+                    <img src="images/test22.png">
+                    <h6>INTERNATIONAL PHOTO DISTRICT NEWS 2020
+                        <br>
+                        FACES COMPETITION ANIMAL CATEGORY
+                        <br>
+                        DISTINCTION AWARD</h6>
+                </div>
+                <div class="column">
+                    
+                </div>
+                <div class="column">
+                    
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="btn">
+                        <button>CONTACT US</button>
+                    </div>
                 </div>
             </div>
         </div>
