@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dolce Vita</title>
+    <meta charset="utf-8">
+
+    <!--responsive for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="color.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+        body {
+            background-color: #F0EDE8;
+        }
+
+        .container > .columns {
+            margin-top: 0px;
+        }
+
+        .img-container{
+            position:relative;
+            display:inline-block;
+        }
+
+        .img-container .overlay{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            opacity: 0;
+            transition:opacity 500ms ease-in-out;
+        }
+
+        .img-container:hover .image{
+            /*opacity: 0.5;*/
+            filter: brightness(50%);
+            
+        }
+
+        .img-container:hover .overlay{
+            opacity: 1;
+        }
+
+        .overlay span{
+            position:absolute;
+            width: 80%;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color: #fff;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+<!--HEADER START-->
+<header>
+    <div class="bookNow">
+        BOOK NOW
+    </div>
+    <div class="lang">
+        ENGLISH <i class="fa fa-chevron-down"></i>
+    </div>
+    <div class="htitle">
+        <h1>DOLCE VITA</h1>
+        <h4>PHOTOGRAPHY STUDIO</h4>
+    </div>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="about.html" >ABOUT US</a></li> <!--Active on about.html page-->
+            <li><a href="people.html" >OUR PEOPLE</a></li>
+            <li><a href="wallart.html">WALLART</a></li>
+            <li><a href="gallery.html" >GALLERY</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="blog.html" >BLOG</a></li>
+            <li><a href="testimonial.html">TESTIMONIAL</a></li>
+            <li><a href="faq.html" >FAQ</a></li>
+            <li><a href="charity.html" >CHARITY</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="privacy.html" class="active">PRIVACY</a></li>
+         </ul>
+    </nav>
+</header>
+
+<!--Mobile header-->
+<nav class="mobile-nav navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="about.html">
+        <img src="images/DV.svg" height="28">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="about.html">ABOUT US</a>
+            <a class="navbar-item" href="people.html">OUR PEOPLE</a>
+            <a class="navbar-item" href="wallart.html">WALLART</a>
+            <a class="navbar-item" href="gallery.html">GALLERY</a>
+            <a class="navbar-item" href="packages.html">PACKAGES</a>
+            <a class="navbar-item" href="blog.html">BLOG</a>
+            <a class="navbar-item" href="testimonial.html">TESTIMONIAL</a>
+            <a class="navbar-item" href="charity.html">CHARITY</a>
+            <a class="navbar-item" href="faq.html">FAQ</a>
+            <a class="navbar-item" href="contact.html">CONTACT US</a>
+            <a class="navbar-item" href="privacy.html">PRIVACY</a>
+    
+    </div>
+    
+        <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button">
+                    <strong>BOOK NOW</strong>
+                </a>
+                    ENGLISH <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+</nav>
+
+<!--HEADER ENDS-->
+
+
+    <section class="section">
+        <div class="container">
+            <div class="sectionTitle">
+                <h1>PRIVACY POLICY</h1>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <h6>
+                        <strong>Your privacy is important to us. The purpose of this Privacy Policy is to inform you of how Dolce Vita Studio manages your personal data in accordance with the Personal Data Protection Act 2012 (“the Act”). Please take a moment to read this Privacy Policy so that you know and understand the purposes for which we collect, use and disclose your Personal Data.  
+                        <br><br>
+                        By interacting with us, submitting information to us or signing up for any promotions or services offered by us, you agree and consent to Dolce Vita Studio, as well as our respective representatives collecting, using, disclosing and sharing amongst themselves your Personal Data, and disclosing such Personal Data to Dolce Vita’s authorised service providers and relevant third parties in the manner set forth in this Privacy Policy.
+                        </strong><br><br>
+                        This Privacy Policy supplements but does not supersede nor replace any other consents you may have previously provided to Dolce Vita nor does it affect any rights which Dolce Vita may have at law in connection with the collection, use or disclosure of your Personal Data. Dolce Vita may from time to time update this Privacy Policy to ensure that this Privacy Policy is consistent with our future developments, industry trends and/or any changes in legal or regulatory requirements. Subject to your rights at law, you agree to be bound by the prevailing terms of the Privacy Policy as updated from time to time on our websites. Please check regularly for updated information on the handling of your Personal Data.
+                        <br><br>
+                        For avoidance of doubt, this Privacy Policy forms a part of the Website Terms and Conditions (‘Website Conditions’). In the event of any conflict, inconsistency or conflict between this Privacy Policy and the Website Conditions, the Privacy Policy shall prevail. All defined terms contained in the Website Conditions shall apply to this Privacy Policy unless otherwise specifically stated.
+                        <br><br><br>
+                        <strong>1.  Your Personal Data</strong> 
+                        <br><br>
+                        1.1 In this Privacy Policy, “Personal Data” refers to any data or information about you from which you can be identified either (a) from that data; or (b) from that data and other information to which we have or are likely to have access. Examples of such Personal Data which you may provide to us include (depending on the nature of your interaction with us):
+                        <br><br>
+                        (a)  your name, NRIC, passport or other identification number, telephone number(s), mailing address, email address and any other information relating to you which you have provided us in any forms you may have submitted to us, or in other forms of interaction with you;
+                        <br><br>
+                        (b)  information about your use of Dolce Vita’s website and services, including cookies, IP address, subscription account details and membership details, but only to the extent that Dolce Vita may identify you from such information;
+                        <br><br>
+                        (c)  your employment history, education background, and income levels;
+                        <br><br>
+                        (d)  your payment related information, such as your bank account or credit card information, and your credit history; and
+                        <br><br>
+                        (e)  information about your usage of and interaction with our website and/or services including computer and connection information, device capability, bandwidth, statistics on page views, and traffic to and from our website.
+                        <br><br><br>
+                        <strong>2.  Collection of Personal Data</strong>
+                        <br><br>  
+                        2.1 Generally, Dolce Vita collects your Personal Data in the following ways:
+                        <br><br>
+                        (a)  when you submit forms relating to any of our products or services;
+                        <br><br>
+                        (b)  when you register for or use any of our services on websites owned or operated by us or when you register as a member of websites owned and/or operated by us, or use services on such websites; 
+                        <br><br>
+                        (c)  when you interact with our customer service officers;
+                        <br><br>
+                        (d)  when you use some of our services, e.g. our subscription service;
+                        <br><br>
+                        (e)  when you establish any online accounts with us;
+                        <br><br>
+                        (f)  when you request that we contact you;
+                        <br><br>
+                        (g)  when you are contacted by, and respond to, our marketing representatives and agents;
+                        <br><br>
+                        (h)  when you respond to our request for additional Personal Data
+                        <br><br>
+                        (i)  when you ask to be included in an email or other mailing list;
+                        <br><br>
+                        (j)  when you respond to our promotions and other initiatives;
+                        <br><br>
+                        (k)  when you submit a job application or a scholarship application;
+                        <br><br>
+                        (l)  when you enter into tenancy agreements with us;
+                        <br><br>
+                        (m)  when we receive references from business partners and third parties, for example, where you have been referred by them;
+                        <br><br>
+                        (n)  when you submit your Personal Data to us for any other reason.
+                        <br><br>
+                        2.2  When you browse our website, you generally do so anonymously but please see the section below on cookies.
+                        <br><br>
+                        2.3  If you provide us with any Personal Data relating to a third party (e.g. information of spouse, children, parents, employees and/or authorised representatives), by submitting such information to us, you represent to us that you have obtained the consent of the third party to you providing us with their Personal Data for the respective purposes.
+                        <br><br>
+                        2.4  You should ensure that all Personal Data submitted to us is complete, accurate, true and correct. Failure on your part to do so may result in our inability to provide you with products and services you have requested.
+                        <br><br><br>
+                        <strong>3   Purposes for the Collection, Use and Disclosure of Your Personal Data</strong>
+                        <br><br>
+                        3.1 Generally, Dolce Vita collects, uses and discloses your Personal Data for the following purposes:
+                        <br><br>
+                        (a)  responding to your queries and requests and responding to complaints;
+                        <br><br>
+                        (b)  managing the infrastructure and business operations of Dolce Vita and complying with internal policies and procedures;
+                        <br><br>
+                        (c)  facilitating business asset transactions (which may extend to any merger, acquisition or asset sale;
+                        <br><br>
+                        (d)  matching any Personal Data held which relates to you for any of the purposes listed herein;
+                        <br><br>
+                        (e)  verifying your identity;
+                        <br><br>
+                        (f)  preventing, detecting and investigating crime, including fraud and money-laundering, and analyzing and managing other commercial risks;
+                        <br><br>
+                        (g)  protecting and enforcing our contractual and legal rights and obligations;
+                        <br><br>
+                        (h)  conducting audits, reviews and analysis of our internal processes, action planning and managing commercial risks;
+                        <br><br>
+                        (i)  preventing, detecting and investigating crime and managing the safety and security of our premises and services (including but not limited to carrying out CCTV surveillance and conducting security clearances
+                        <br><br>
+                        (j)  compliance with any applicable rules, laws and regulations, codes of practice or guidelines or to assist in law enforcement and investigations by relevant authorities; and/or
+                        <br><br>
+                        (k)  any other purpose relating to any of the above.
+                        <br><br><br>
+                        <strong>4.  Disclosure of Personal Data</strong>
+                        <br><br>
+                        4.1 Dolce Vita will take reasonable steps to protect your Personal Data against unauthorised disclosure. Subject to the provisions of any applicable law, this Personal Data may be disclosed, for the purposes listed above (where applicable), to the following third parties, whether they are located overseas or in Singapore:
+                        <br><br>
+                        (a)  Dolce Vita affiliates;
+                        <br><br>
+                        (b)  agents, contractors or third party service providers who provide operational services to SPH, such as telecommunications, information technology, payment, payroll, processing, training, market research, newspaper vendor services, newspaper delivery services, storage, archival or other services to Dolce Vita;
+                        <br><br>
+                        (c)  vendors or any third party business partners who offer goods and services or sponsor contests or other promotional programs on SPH’s sites, whether in conjunction with us or not;
+                        <br><br>
+                        (d)  external business and charity partners in relation to corporate promotional events;
+                        <br><br>
+                        (e)  the Credit Bureau, or in the event of default or disputes, any debt collection agencies or dispute resolution centres;
+                        <br><br>
+                        (f)  any business partner, investor, assignee or transferee (actual or prospective) to facilitate business asset transactions (which may extend to any merger, acquisition or asset sale;
+                        <br><br>
+                        (g)  anyone to whom we transfer or may transfer our rights and duties;
+                        <br><br>
+                        (h)  banks, credit card companies and their respective service providers;
+                        <br><br>
+                        (i)  our professional advisors such as our auditors and lawyers;
+                        <br><br>
+                        (j)  relevant government regulators or authority or law enforcement agency to comply with any laws or rules and regulations imposed by any governmental authority; and
+                        <br><br>
+                        (k)  any other party to whom you authorise us to disclose your personal data
+                        <br><br><br>
+                        <strong>5.  Third-Party Sites</strong>
+                        <br><br>
+                        5.1 Our website may contain links to other websites operated by third parties, such as our business partners. We are not responsible for the privacy practices of websites operated by third parties that are linked to our website. We encourage you to learn about the privacy policies of such third party websites. Some of these third party websites may be co-branded with our logo or trademark, even though they are not operated or maintained by us. Once you have left our website, you should check the applicable terms, conditions and policies of the third party website to determine how they will handle any information they collect from you.
+                        <br><br><br>
+                        <strong>6.  Withdrawal, Access and Correction of your Personal Data</strong>
+                        <br><br>
+                        6.1 Should you wish to withdraw consent to use of your Personal Data or obtain access to or make corrections to your Personal Data records, please log in to the relevant account through which the Personal Data was provided, if any, failing which please contact the relevant Personal Data Protection Officer, contact details of which are found in the Personal Data Protection Statement or similar document elsewhere on the relevant Dolce Vita website.
+                        <br><br>
+                        6.2 Please note that if your Personal Data has been provided to us by a third party, you should contact such party directly to make any queries, feedback, and access and correction requests to Dolce Vita on your behalf.
+                        <br><br>
+                        6.3 Please note that if you withdraw your consent to any or all use of your Personal Data, depending on the nature of your request, Dolce Vita may not be in a position to continue to provide its products or services to you or administer any contractual relationship in place, and this may also result in the termination of any agreements with Dolce Vita and your being in breach of your contractual obligations or undertakings, and Dolce Vita’s legal rights and remedies in such event are expressly reserved.
+                        <br><br><br>
+                        <strong>7.  Governing Law</strong>
+                        <br><br>
+                        7.1 This Privacy Policy shall be governed in all respects by the laws of Singapore.
+                        <br><br>
+                    </h6>
+                    <h6 style="text-align: right;">
+                        (Last updated 23 June 2020)
+                    </h6>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+  <!--FOOTER START-->
+  <footer class="desktop">
+    <div class="htitle">
+        <h1 style="font-size: 36px;">DOLCE VITA</h1>
+        <h4 style="font-size: 10px;">PHOTOGRAPHY STUDIO</h4>
+    </div>
+
+    <div class="footer">
+        <div class="fservice">
+            <ul>
+                <li><h5>Services</h5><br></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="wallart.html">WALLART</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="covid.html">COVID-19 UPDATE</a></li>
+            </ul>
+        </div>
+        <div class="fnews">
+            <ul>
+                <li><h5>Newsletter sign up</h5><br></li>
+                <li>Email</li>
+                <li><div class="md-form">
+                    <input type="email" id="form1" class="form-control" placeholder="ADD YOUR EMAIL ADDRESS">
+                </div>
+               
+                <button class="button is-text">SUBMIT</button></li>
+            </ul>
+
+        </div>
+        <div class="fsocial">
+            <ul>
+                <li><h5>Social</h5></li>
+                <i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-share-alt"></i>
+                <li><h5>Official Website</h5></li>
+                <li><a href="index.html">DOLCEVITA.COM</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flang">
+        CHANGE YOUR LANGUAGE<h5 style="display: inline; padding-left: 30px;">ENGLISH <i class="fa fa-chevron-down"></i></h5>
+    </div>
+</footer>
+
+<footer class="mobile">
+    <div class="htitle">
+        <h1 style="font-size: 36px;">DOLCE VITA</h1>
+        <h4 style="font-size: 10px;">PHOTOGRAPHY STUDIO</h4>
+    </div>
+
+    <div class="fbody">
+    <div>
+        <div class="services">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="wallart.html">WALLART</a></li>
+                <li><a href="packages.html">PACKAGES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="covid.html">COVID-19 UPDATE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footerBtm">
+
+        <div class="newsletter">
+            <h5>Choose Your Language</h5>    
+            <div>ENGLISH <i class="fa fa-chevron-down"></i></div>
+        </div>
+
+           <div class="social">
+               <h5>Social</h5>
+               <i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-share-alt"></i>
+            </div>
+
+
+    </div>
+</div>
+
+</footer>
+<!--FOOTER END-->
+<script src="scripts/navbar.js"></script>
+</body>
+</html>
