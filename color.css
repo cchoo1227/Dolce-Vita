@@ -584,6 +584,7 @@ hr {
 .covid-banner.desktop > div:nth-child(2) {
     position: absolute;
     right: 5px;
+    cursor: pointer;
 }
 
 .covid-banner.desktop > div:nth-child(1) a {
