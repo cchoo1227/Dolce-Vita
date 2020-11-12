@@ -14,9 +14,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        
-        body {
+        .grey{
             background-color: #F0EDE8;
+        }
+
+        .grey .section {
+            padding: 5px;
+        }
+
+        .grey .columns:first-child{
+            margin: 0;
+        }
+
+        .grey .columns:last-child{
+            margin-bottom: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        *::before, *::after {
+            box-sizing: border-box;
+        }
+        .faq {
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 40rem;
+        }
+        .accordion .accordion-item {
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .accordion .accordion-item button[aria-expanded="true"] {
+            border-bottom: 1px solid #BDA55D;
+        }
+        .accordion button {
+            position: relative;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 0.8em 0;
+            color: #1D1D1F;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        .accordion button:hover {
+            cursor: pointer;
+            color: #BDA55D;
+        }
+        .accordion button:hover::after, .accordion button:focus::after {
+            cursor: pointer;
+            color: #BDA55D;
+            border: 1px solid #BDA55D;
+        }
+        .accordion button .accordion-title {
+            padding: 1em 1.5em 1em 0;
+        }
+        .accordion button .icon {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+            border: 1px solid;
+            border-radius: 22px;
+        }
+        .accordion button .icon::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 9px;
+            left: 5px;
+            width: 10px;
+            height: 2px;
+            background: currentColor;
+        }
+        .accordion button .icon::after {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 5px;
+            left: 9px;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+        }
+        .accordion button[aria-expanded="true"] {
+            color: #BDA55D;
+        }
+        .accordion button[aria-expanded="true"] .icon::after {
+            width: 0;
+        }
+        .accordion button[aria-expanded="true"] + .accordion-content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+        .accordion .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;
+            will-change: opacity, max-height;
+        }
+        .accordion .accordion-content p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 0;
         }
 
 
@@ -97,9 +206,7 @@
     </div>
 </nav>
 
-<!--HEADER ENDS-->
-
-
+    <!--HEADER ENDS-->
     <section class="section">
         <div class="container">
             <div class="sectionTitle">
@@ -115,85 +222,69 @@
                     </h6>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="columns">
-                <div class="column">
-                    <!--Gives the wrapper-->
-                    <div class="content">       
-                        <div class="columns">
-                            <div class="column" style="flex-grow: 0.5;"><h2>About our packages</h2></div>
-                            <div class="column">&nbsp;<hr></div>
-                        </div>   
+    <div class="grey">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <!--Gives the wrapper-->
+                        <div class="content">       
+                            <div class="columns">
+                                <div class="column" style="flex-grow: 0.5;"><h2>About our packages</h2></div>
+                                <div class="column">&nbsp;<hr></div>
+                            </div>   
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="columns">
-                <div class="column is-one-third">
-                    <img src="images/faq1.png">
-                </div>
-                <div class="column">
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>What packages do you offer?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                          <div class="dropdown-content" style="padding: 5px 10px;">
-                            <h6>We offer two types of packages:<br>
-                                - weekday two-hour studio session<br>
-                                - weekend two-hour studio session<br>
-                               You can choose whether or not to include a wall art in either package but 90% of our customers do and you will not regret it!</h6>
-                          </div>
-                        </div>
+                <div class="columns">
+                    <div class="column">
+                        <img src="images/faq1.png">
                     </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>What are the prices of each package?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                          <div class="dropdown-content" style="padding: 5px 10px;">
-                            <h6>
-                                Weekday two-hour studio session - $165<br>
-                                Weekend two-hour studio session - $220<br>
-                                Please note that you will be charged additionally for the wall art.
-                            </h6>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>Which package should I choose?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                          <div class="dropdown-content" style="padding: 5px 10px;">
-                            <h6>
-                                We suggest you come on a weekday if possible as we are slightly overbooked for the weekends and there might be longer waiting time for you and your fur-babies.
-                            </h6>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>Can I change my photoshoot date after booking?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                          <div class="dropdown-content" style="padding: 5px 10px;">
-                            <h6>
-                                Yes, you may. If there are valid reasons causing you to be unable to make it for the session booked, we are more than willing to work things out with you. Simply drop us an email so we can arrange another session for you.
-                            </h6>
-                          </div>
+                    <div class="column faq"> 
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What packages do you offer?</span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        We offer three types of packages:<br>
+                                        - weekday two-hour studio session ($165) + wall art ($450)<br>
+                                        - weekend two-hour studio session ($220) + wall art ($550)<br>
+                                        - double trouble bundle deal + two wall art ($1000)<br>
+                                        You can choose whether or not to include a wall art for the weekday or weekend sessions but 90% of our customers do and we promise you will love it!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Which package should I choose?</span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        We suggest you come on a weekday if possible as we are slightly overbooked for the weekends and there might be longer waiting time for you and your fur-babies.
+                                        <br><br><br><br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can I change my photoshoot date after booking?</span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        Yes, you may. If there are valid reasons causing you to be unable to make it for the session booked, we are more than willing to work things out with you. Simply drop us an email so we can arrange another session for you.
+                                        <br><br><br><br>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </section>
+    </div>
+        
+    <section class="section">
+        <div class="container">
             <div class="columns">
                 <div class="column">
                     <!--Gives the wrapper-->
@@ -207,156 +298,113 @@
             </div>
 
             <div class="columns">
-                <div class="column">
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>How long is the photoshoot session?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-
-                                </h6>
+                <div class="column faq"> 
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How long is the photoshoot session?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    The photoshoot session will take around two hours. If you are taking the bundle deal, it will be three hours in total for the both of you. However, you do need to make some time before the photoshoot session for a consultation so that we are clear of your needs and preferences. The consultation session can be done physically at our studio or through an online meeting.
+                                </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>Can I be present during the photoshoot session?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-
-                                </h6>
+                        <div class="accordion-item">
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Can I bring my own props to the studio?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    Yes! We highly encourage you to bring your own props to the studio so that your pet is more familiar with them. Ultimately, we do want to capture the essence and personality of your pet at his/her usual state. If you do not wish to bring props, props will also be provided here at the studio.
+                                    <br><br>
+                                </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>Can I bring my own props to the studio?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-
-                                </h6>
+                        <div class="accordion-item">
+                            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What if my pet needs to take a break?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    We will have a break in between every session for your pet to explore our studio and freshen up. However, if at any point you feel that your pet needs to rest, feel free to let our photographers know! Rest assured that the session will be personal and fun and your pet shouldn’t feel too worn out from the session.
+                                    <br><br>
+                                </p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>What if my pet needs to take a break?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                          <div class="dropdown-content" style="padding: 5px 10px;">
-                            <h6>
-                            
-                            </h6>
-                          </div>
                         </div>
                     </div>
                 </div>
-                <div class="column is-one-third">
+                <div class="column"  style="text-align: right;">
                     <img src="images/faq2.png">
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="columns">
-                <div class="column">
-                    <!--Gives the wrapper-->
-                    <div class="content">       
-                        <div class="columns">
-                            <div class="column" style="flex-grow: 0.5;"><h2>About our wall art</h2></div>
-                            <div class="column">&nbsp;<hr></div>
+    <div class="grey">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <!--Gives the wrapper-->
+                        <div class="content">       
+                            <div class="columns">
+                                <div class="column" style="flex-grow: 0.5;"><h2>About our wall art</h2></div>
+                                <div class="column">&nbsp;<hr></div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <img src="images/faq3.png" >
+                    </div>
+                    <div class="column faq"> 
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is a wall art?</span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        A wall art is set of customized framed photographs of your pet. Our in-house designer will work with you to help you choose the best style to suit your home aesthetics. All you have to do is select your favourite photos, sit back, and watch your pet become a unique piece of art for your home. Say goodbye to plain, boring walls!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What are the styles available?</span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        Our Wall Art Collection Range features canvas bases, aluminium borders, contemporary frames and ultra-modern acrylic pieces - all kinds of style to suit your every need. You can also choose from five different types of layouts according to your needs and preferencecs.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How do I know which wall art suits my home?</span><span class="icon" aria-hidden="true"></span></button>
+                                <div class="accordion-content">
+                                    <p>
+                                        After the photoshoot session, you will have a design consultation session with our in-house designer. Based on the photos you provide of your home, our designer will advice you on the best type and style of wall art to go for. You will also be able to virtually visualize how the suggested wall art will look like on your wall through our app. Fret not, we will ensure the best selection for you!
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>   
                     </div>
                 </div>
             </div>
+        </section>
+    </div>
 
-            <div class="columns">
-                <div class="column is-one-third">
-                    <img src="images/faq3.png">
-                </div>
-                <div class="column">
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>What is a wall art?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>Will the wall art be included in all packages?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-                                    
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>What are the styles available?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown is-hoverable" style="width: 100%; margin-bottom: 20px;">
-                        <div class="dropdown-trigger" style="width: 100%;">
-                            <h6>How do I know which wall art suits my home?</h6>
-                            <hr>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                            <div class="dropdown-content" style="padding: 5px 10px;">
-                                <h6>
-
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns">
+    <section class="section">
+        <div class="container">
+            <div class="columns" style="margin-top: 0;">
                 <div class="column">
                     <h6 class="textCenter">
                         Have a question that is not included here? Drop us an email now and we will get back to you soon.
                     </h6>
-                    <div class="btn" style="margin-top: 20px;">
+                    <div class="btn" style="margin-top: 50px;">
                         <button>CONTACT US</button></li>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
+    
 
   <!--FOOTER START-->
   <footer class="desktop">
@@ -442,5 +490,38 @@
 </footer>
 <!--FOOTER END-->
 <script src="scripts/navbar.js"></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    const items = document.querySelectorAll(".accordion button");
+
+    function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+    
+    for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+    
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+    }
+
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+
 </body>
 </html>
