@@ -924,14 +924,23 @@ mix-blend-mode: difference;
 }
 
 .package button {
-    margin-top: 90px;
+    margin-top: 40px;
     background-color: transparent;
     text-align: center;
 }
 
-.package .container > .columns {
-    margin-bottom: 75px;
+@media only screen and (min-width: 821px) {
+    
+    .package .container > .columns {
+        margin-bottom: 75px;
+    }
+
+    .package button {
+        margin-top: 90px;
+    }
+  
 }
+
 
 .package .title {
     margin-bottom: 45px;
