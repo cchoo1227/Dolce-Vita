@@ -836,3 +836,77 @@ mix-blend-mode: difference;
     }
 }
 
+/*CONTACT*/
+.contact form {
+    width: 90%;
+    margin: 90px auto;
+}
+
+.contact .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact label {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.contact .control .select {
+    width: 100%;
+}
+
+.contact .control select, .contact .control input[type="text"], .contact .control input[type="number"], .contact .control input[type="email"]{
+    width: 100%;
+    font-family: 'Lato';
+}
+
+.contact .btn {
+    text-align: right;
+}
+
+.contact .select:not(.is-multiple):not(.is-loading)::after {
+    border-color: black;
+}
+
+.contact a {
+    color: #808080;
+}
+
+.contact a:hover {
+    color: #808080;
+}
+
+.contact form a {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.contact form a:hover {
+    color: black;
+}
+
+.contact .req {
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 2.5;
+}
+
+@media only screen and (min-width: 821px) {
+
+    .contact .control .select.ntitle {
+        width: 49%;
+    }
+    
+}
+
+@media only screen and (max-width: 821px) {
+
+    .contact .header {
+        flex-direction: column;
+    }
+    
+}
+
