@@ -411,6 +411,10 @@ footer {
     .glide__slide img {
         right: 15px;
     }
+
+    .glide__slide {
+        height: 170px !important;
+    }
     
 
 }
