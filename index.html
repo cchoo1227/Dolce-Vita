@@ -23,6 +23,22 @@
 </head>
 <body>
 
+<div class="covid-banner desktop">
+    <div><a href="covid.html">COVID-19 UPDATE</a></div>
+    <div onclick="closeCovid(event)">X</div>
+</div>
+
+<div class="covid-banner mobile">
+    <div>
+        <div>
+            <div>COVID-19<br>UPDATE</div>
+            <h6>We at Dolce Vita are taking the utmost precautions for your safety and concern.</h6>
+            <div class="btn white"><a href="covid.html">CLICK HERE TO VIEW</a></div>
+            <div onclick="closeCovidMobile(event)">X</div>
+        </div>
+    </div>
+</div>
+
 <section class="section video">
 
     <div class="video-overlay">
@@ -61,5 +77,6 @@
 </section>
 
 <script src="scripts/navbar.js"></script>
+<script src="scripts/closeCovid.js"></script>
 </body>
 </html>

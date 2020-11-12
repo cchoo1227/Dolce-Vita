@@ -260,6 +260,16 @@ footer {
     text-align: center;
 }
 
+.btn.white button, .btn.white a {
+    background-color: #fff;
+    color: #1D1D1F;
+}
+
+.btn.white:hover button, .btn.white:hover a {
+    background-color: #1D1D1F !important;
+    color: #fff !important;
+}
+
 .btn button, .btn a {
     border-style: none;
     font-family: 'Baskervville', serif;
@@ -549,7 +559,90 @@ hr {
     border-top: 1px solid black;
 }
 
-/*VIDEO*/
+/*HOMEPG*/
+
+.covid-banner.desktop {
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+    background: black;
+    padding: 2px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.covid-banner.desktop > * {
+    display: inline;
+    color: white;
+    font-size: 12px;
+}
+
+.covid-banner.desktop > div:nth-child(2) {
+    position: absolute;
+    right: 5px;
+}
+
+.covid-banner.desktop > div:nth-child(1) a {
+    color: #fff;
+}
+
+.covid-banner.desktop > div:nth-child(1) a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.covid-banner.mobile {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.covid-banner.mobile > div {
+    background: black;
+    margin: 80px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 25px;
+}
+
+.covid-banner.mobile > div > div > div, .covid-banner.mobile > div > div > h6 {
+    color: white ;
+    margin-bottom: 30px;
+}
+
+.covid-banner.mobile > div > div > div:nth-child(1) {
+    font-family: 'Baskervville';
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.covid-banner.mobile > div > div > div:nth-child(4) {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 820px) {
+
+
+.covid-banner.mobile {
+    display: flex;
+}
+
+
+.covid-banner.desktop {
+    display: none;
+}
+
+}
+
 
 .section.video {
     position: fixed;
@@ -675,4 +768,71 @@ mix-blend-mode: difference;
 
 }
 
+/*charity*/
+
+.charity hr {
+    margin: 0 auto;
+    width: 20%;
+}
+
+.charity .title {
+    font-family: 'Baskervville';
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.charity img {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.charity-partner-caption{
+    display: flex;
+    align-items: center;
+}
+
+.charity-partner-caption .title {
+    text-align: left;
+}
+
+.charity-partner-caption .btn {
+    text-align: left;
+}
+
+.charity-partner-caption button {
+    margin-top: 45px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.charity .columns:nth-child(2) {
+    margin-bottom: 75px;
+}
+
+.charity .columns:nth-child(4), .charity .columns:nth-child(5)  {
+    margin: 75px 0;
+}
+
+
+@media only screen and (min-width: 821px) {
+
+    .charity .is-variable {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 821px) {
+
+
+.charity .columns:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+    .charity .columns:nth-child(4), .charity .columns:nth-child(5)  {
+        margin: 40px 0;
+    }
+}
 
