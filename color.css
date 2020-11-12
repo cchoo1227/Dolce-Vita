@@ -353,6 +353,7 @@ footer {
 
 .glide__slide img {
     height: 100%;
+    position: relative;
 }
 
 .glide__arrows .glide__arrow {
@@ -383,6 +384,11 @@ footer {
     .glide__arrows .glide__arrow--right {
         right: -0.4em;
     }
+
+    .glide__slide img {
+        right: 15px;
+    }
+    
 
 }
 
