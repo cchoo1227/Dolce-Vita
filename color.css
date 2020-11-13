@@ -918,6 +918,11 @@ mix-blend-mode: difference;
 
 /*PACKAGES*/
 
+.package img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .package .container > .columns:nth-child(2){
     margin-bottom: 0px;
 }
@@ -963,6 +968,7 @@ mix-blend-mode: difference;
 
 .package .title {
     margin: 0 0 75px;
+    font-size: 30px;
 }
 
 
@@ -977,6 +983,7 @@ mix-blend-mode: difference;
 
 .package .container > .columns:nth-child(4) .services .title {
     margin: 0 0 20px;
+    font-size: 24px;
 }
 
 .package .services .btn {
