@@ -13,10 +13,101 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
 
     <style>
-        
       
+        .select-box {
+            position: relative;
+            display: block;
+            width: 100px;
+            color: #fff;
+        }
+
+        .select-box__current {
+            position: relative;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            outline: none;
+        }
+
+        .select-box__current:focus + .select-box__list {
+            opacity: 1;
+            animation-name: none;
+        }
+
+        .select-box__current:focus + .select-box__list .select-box__option {
+            cursor: pointer;
+        }
+
+        .select-box__current:focus .select-box__icon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .select-box__icon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 20px;
+            opacity: 0.3;
+            transition: 0.2s ease;
+        }
+
+        .select-box__value {
+            display: flex;
+        }
+
+        .select-box__input {
+            display: none;
+        }
+
+        .select-box__input:checked + .select-box__input-text {
+            display: block;
+        }
+
+        .select-box__input-text {
+            display: none;
+            width: 100%;
+            margin: 0;
+            padding: 5px;
+            background-color: transparent;
+        }
+
+        .select-box__list {
+            position: absolute;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            opacity: 0;
+            animation-name: HideList;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-start;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+
+        .select-box__option {
+            display: block;
+            padding: 10px;
+            background-color: #FFF;
+            color: black;
+        }
+
+        .select-box__option:hover, .select-box__option:focus {
+            color: #fff;
+            background-color: #7D8184;
+        }
+
+        @keyframes HideList {
+            from {
+                transform: scaleY(1);
+            }
+            to {
+                transform: scaleY(0);
+            }
+        }
 
     </style>
 </head>
@@ -27,7 +118,30 @@
         BOOK NOW
     </div>
     <div class="lang">
-        ENGLISH <i class="fa fa-chevron-down"></i>
+        <!--ENGLISH <i class="fa fa-chevron-down"></i>-->
+        <div class="select-box">
+            <div class="select-box__current" tabindex="1">
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked">
+                    <p class="select-box__input-text">ENGLISH</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2" name="Ben">
+                    <p class="select-box__input-text">CHINESE</Canvas></p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="3" name="Ben">
+                    <p class="select-box__input-text">MALAY</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="4" name="Ben">
+                    <p class="select-box__input-text">TAMIL</p>
+                </div>
+                <img class="select-box__icon" src="images/arrow-down.png" alt="Arrow Icon" aria-hidden="true">
+            </div>
+            <ul class="select-box__list">
+                <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">ENGLISH</label></li>
+                <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">CHINESE</label></li>
+                <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">MALAY</label></li>
+                <li><label class="select-box__option" for="3" aria-hidden="aria-hidden">TAMIL</label></li>
+            </ul>
+        </div>
     </div>
     <div class="htitle">
         <h1>DOLCE VITA</h1>
@@ -87,7 +201,30 @@
                     <a class="button">
                         <strong>BOOK NOW</strong>
                     </a>
-                        ENGLISH <i class="fa fa-chevron-down"></i>
+                        <!--ENGLISH <i class="fa fa-chevron-down"></i>-->
+                        <div class="select-box">
+                            <div class="select-box__current" tabindex="2">
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="m0" value="1" name="ken" checked="checked">
+                                    <p class="select-box__input-text">ENGLISH</p>
+                                </div>
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="m1" value="2" name="ken">
+                                    <p class="select-box__input-text">CHINESE</Canvas></p>
+                                </div>
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="m2" value="3" name="ken">
+                                    <p class="select-box__input-text">MALAY</p>
+                                </div>
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="m3" value="4" name="ken">
+                                    <p class="select-box__input-text">TAMIL</p>
+                                </div>
+                                <img class="select-box__icon" src="images/arrow-down.png" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li><label class="select-box__option" for="m0" aria-hidden="aria-hidden">ENGLISH</label></li>
+                                <li><label class="select-box__option" for="m1" aria-hidden="aria-hidden">CHINESE</label></li>
+                                <li><label class="select-box__option" for="m2" aria-hidden="aria-hidden">MALAY</label></li>
+                                <li><label class="select-box__option" for="m3" aria-hidden="aria-hidden">TAMIL</label></li>
+                            </ul>
+                        </div>
                 </div>
             </div>
             </div>
@@ -175,24 +312,6 @@
                 </div>
             </div>
 
-
-            <div class="columns is-variable is-8">
-                <div class="column">
-                    <div style="border: red 5px solid;">
-                        hi
-                    </div>
-                </div>
-                <div class="column">
-                    <div style="border: red 5px solid;">
-                        hi
-                    </div>
-                </div>
-                <div class="column">
-                    <div style="border: red 5px solid;">
-                        hi
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -272,8 +391,6 @@
                    <h5>Social</h5>
                    <i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-share-alt"></i>
                 </div>
-
-
         </div>
     </div>
 
