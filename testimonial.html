@@ -75,6 +75,31 @@
         .award h6{
             font-size: 14px;
         }
+
+        @media only screen and (max-width: 820px) {
+
+            .glide__track {
+                border: 15px solid #F0EDE8;
+            }
+
+            .glide__arrows .glide__arrow--left {
+                left: -0.4em;
+            }
+
+            .glide__arrows .glide__arrow--right {
+                right: -0.4em;
+            }
+
+            .glide__slide img {
+                right: 15px;
+            }
+
+            .glide__slide {
+                height: 100% !important;
+            }
+
+        }
+
     </style>
 </head>
 <body>
@@ -175,7 +200,7 @@
                 <!--Gives the wrapper-->
                     <div class="content">       
                         <div class="columns">
-                            <div class="column" style="flex-grow: 1.2;" id="customer"><h2>What do our customers say about us?</h2></div>
+                            <div class="column" style="flex-grow: 1.5;" id="customer"><h2>What do our customers say about us?</h2></div>
                             <div class="column" style="margin: auto 0;"><h3>&nbsp;<hr></h3></div>
                         </div>  
                     </div>
@@ -317,7 +342,7 @@
             </div>
 
             
-
+            <!--Carousel-->
             <div class="container carousel">
                 <div class="glide1">
                     <div class="glide__track" data-glide-el="track">
@@ -326,25 +351,25 @@
                             <div class="columns is-variable is-8 textCenter">
                                 <div class="column"> 
                                     <div class="img-container">
-                                        <img src="images/test16.png" class="image">
+                                        <img src="images/test24.png" class="image">
                                         <div class="overlay">
                                             <span>
                                                 Read the full article
                                             </span>
                                         </div>
-                                    </div>
-                                    <h6 style="text-align: left; padding: 0 20px;"><strong>The Work and Magic Behind the Art of Pet Photography with Dolce Vita Studio.</strong></h6>
+                                        <h6 style="text-align: left; width: 95%;"><strong>The Work and Magic Behind the Art of Pet Photography with Dolce Vita Studio</strong></h6>
+                                    </div> 
                                 </div>
                                 <div class="column">
                                     <div class="img-container">
-                                        <img src="images/test17.png" class="image">
+                                        <img src="images/test25.png" class="image">
                                         <div class="overlay">
                                             <span>
                                                 Read the full article
                                             </span>
                                         </div>
-                                    </div>
-                                    <h6 style="text-align: left; padding: 0 20px;"><strong>Dolce Vita’s pet photographer Selina Liu wins gold at the AIPP Awards 2020.</strong></h6>
+                                        <h6 style="text-align: left; width: 90%;"><strong>Dolce Vita’s pet photographer Selina Liu wins gold at the AIPP Awards 2020</strong></h6>
+                                    </div>               
                                 </div>
                             </div>
                         </li>
@@ -352,25 +377,25 @@
                             <div class="columns is-variable is-8 textCenter">
                                 <div class="column"> 
                                     <div class="img-container">
-                                        <img src="images/test16.png" class="image">
+                                        <img src="images/test26.png" class="image">
                                         <div class="overlay">
                                             <span>
                                                 Read the full article
                                             </span>
                                         </div>
+                                        <h6 style="text-align: left; width: 95%;"><strong>“The Mystery Cat” captures hearts and wins Best Photo Of The Year at AIPP 2019</strong></h6>
                                     </div>
-                                    <h6 style="text-align: left; padding: 0 20px;"><strong>The Work and Magic Behind the Art of Pet Photography with Dolce Vita Studio.</strong></h6>
                                 </div>
                                 <div class="column">
                                     <div class="img-container">
-                                        <img src="images/test17.png" class="image">
+                                        <img src="images/test27.png" class="image">
                                         <div class="overlay">
                                             <span>
                                                 Read the full article
                                             </span>
                                         </div>
+                                        <h6 style="text-align: left; width: 90%;"><strong>Behind the Lens: Dolce Vita Studio shares tips and tricks to good animal photography</strong></h6>
                                     </div>
-                                    <h6 style="text-align: left; padding: 0 20px;"><strong>Dolce Vita’s pet photographer Selina Liu wins gold at the AIPP Awards 2020.</strong></h6>
                                 </div>
                             </div>
                         </li>
@@ -378,25 +403,25 @@
                             <div class="columns is-variable is-8 textCenter">
                                 <div class="column"> 
                                     <div class="img-container">
-                                        <img src="images/test16.png" class="image">
+                                        <img src="images/test28.png" class="image">
                                         <div class="overlay">
                                             <span>
                                                 Read the full article
                                             </span>
                                         </div>
-                                    </div>
-                                    <h6 style="text-align: left; padding: 0 20px;"><strong>The Work and Magic Behind the Art of Pet Photography with Dolce Vita Studio.</strong></h6>
+                                        <h6 style="text-align: left; width: 95%;"><strong>The Work and Magic Behind the Art of Pet Photography with Dolce Vita Studio</strong></h6>
+                                    </div>       
                                 </div>
                                 <div class="column">
                                     <div class="img-container">
-                                        <img src="images/test17.png" class="image">
+                                        <img src="images/test29.png" class="image">
                                         <div class="overlay">
                                             <span>
                                                 Read the full article
                                             </span>
                                         </div>
+                                        <h6 style="text-align: left; width: 90%;"><strong>Animal photography and why it is hard for the normal public</strong></h6>
                                     </div>
-                                    <h6 style="text-align: left; padding: 0 20px;"><strong>Dolce Vita’s pet photographer Selina Liu wins gold at the AIPP Awards 2020.</strong></h6>
                                 </div>
                             </div>
                         </li>
@@ -578,10 +603,6 @@
 <script>
 
     let slide1 = new Glide('.glide1').mount();
-    //let slide2 = new Glide('.glide2').mount();
-    //let slide3 = new Glide('.glide3').mount();
-    //let slide4 = new Glide('.glide4').mount();
-    //let slide5 = new Glide('.glide5').mount();
 
 </script>
 </body>
