@@ -918,9 +918,14 @@ mix-blend-mode: difference;
 
 /*PACKAGES*/
 
+.package .container > .columns:nth-child(2){
+    margin-bottom: 0px;
+}
+
 
 .package .btn {
     text-align: left;
+    position: static;
 }
 
 .package button {
@@ -930,7 +935,20 @@ mix-blend-mode: difference;
 }
 
 @media only screen and (min-width: 821px) {
+
+    .package .container > .columns:nth-child(3) > .column .column {
+        position: relative;
+    }
     
+    .package .container > .columns:nth-child(3) > .column .column h6 {
+        margin-bottom: 120px;
+    }
+
+    .package .container > .columns:nth-child(3) > .column .column .btn {
+        position: absolute;
+        bottom: 0;
+    }
+
     .package .container > .columns {
         margin-bottom: 75px;
     }
@@ -942,16 +960,23 @@ mix-blend-mode: difference;
 }
 
 
+
 .package .title {
-    margin-bottom: 45px;
+    margin: 0 0 75px;
 }
+
+
 
 .package .container > .columns:nth-child(4) {
     border-top: 1px solid #B3B3B3;
 }
 
 .package .container > .columns:nth-child(4) .title {
-    margin-top: 30px;
+    margin: 50px 0 60px;
+}
+
+.package .container > .columns:nth-child(4) .services .title {
+    margin: 0 0 20px;
 }
 
 .package .services .btn {
