@@ -111,7 +111,7 @@ header {
 .lang {
     float: right;
     color: #FFF;
-    margin: 15px;
+    margin: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
@@ -172,10 +172,7 @@ ul#menu li {
     .content {
         width: 80%;
     }
-
-
 }
-
 
 .bg {
     padding: 20px 0;
@@ -253,7 +250,7 @@ footer {
 }
 
 .flang {
-    width: 290px;
+    width: 350px;
     margin: auto;
 }
 
@@ -417,7 +414,6 @@ footer {
         height: 170px !important;
     }
     
-
 }
 
 /*OUR PEOPLE*/
