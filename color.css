@@ -275,7 +275,6 @@ footer {
 .btn.white button, .btn.white a {
     background-color: #fff;
     color: #1D1D1F;
-    cursor: pointer;
 }
 
 .btn.white:hover button, .btn.white:hover a {
@@ -391,7 +390,6 @@ footer {
     height: 100%;
     width: 100%;
     position: relative;
-    right: 30px;
 }
 
 .glide__arrows .glide__arrow {
@@ -824,7 +822,7 @@ mix-blend-mode: difference;
 }
 
 
-.charity-partner-caption a {
+.charity-partner-caption button {
     margin-top: 45px;
     background-color: transparent !important;
     text-align: center;
