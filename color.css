@@ -77,6 +77,16 @@ h6 {
     padding: 0;
 }
 
+/*Baskervville header*/
+h7 {
+    font-family: 'Baskervville', serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
 /*content links*/
 
 .links {
@@ -290,7 +300,6 @@ footer {
 .btn.white button, .btn.white a {
     background-color: #fff;
     color: #1D1D1F;
-    cursor: pointer;
 }
 
 .btn.white:hover button, .btn.white:hover a {
@@ -401,7 +410,6 @@ footer {
     height: 100%;
     width: 100%;
     position: relative;
-    right: 30px;
 }
 
 .glide__arrows .glide__arrow {
@@ -834,7 +842,7 @@ mix-blend-mode: difference;
 }
 
 
-.charity-partner-caption a {
+.charity-partner-caption button {
     margin-top: 45px;
     background-color: transparent !important;
     text-align: center;
