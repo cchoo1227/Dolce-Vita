@@ -901,6 +901,18 @@ mix-blend-mode: difference;
 .contact .control select, .contact .control input[type="text"], .contact .control input[type="number"], .contact .control input[type="email"]{
     width: 100%;
     font-family: 'Lato';
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid black;
+    
+}
+
+.contact .control textarea {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid black;
+}
+
+.contact ::placeholder {
+    color: #7D8184;
 }
 
 .contact .btn {
