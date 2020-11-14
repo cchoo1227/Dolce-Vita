@@ -104,8 +104,22 @@ header {
     padding: 5px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    border-style: groove;
+    border-style: solid;
     border-color: #FFF;
+    transition: all 0.3s;
+}
+
+.bookNow a{
+color: white;
+transition: all 0.3s;
+}
+
+.bookNow:hover {
+    background-color: white;
+}
+
+.bookNow:hover a {
+    color: black;
 }
 
 .lang {
@@ -811,9 +825,10 @@ mix-blend-mode: difference;
     text-align: left;
 }
 
+
 .charity-partner-caption button {
     margin-top: 45px;
-    background-color: transparent;
+    background-color: transparent !important;
     text-align: center;
 }
 
@@ -995,7 +1010,7 @@ mix-blend-mode: difference;
     text-align: center;
 }
 
-.package .services button {
+.package .services a {
     margin-top: 20px;
     background-color: transparent;
     text-align: center;
