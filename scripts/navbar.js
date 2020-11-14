@@ -23,3 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
   });
+
+  let mybutton = document.getElementById('js-top');
+
+const scrollToTop = () => {
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+  }; 
+
+mybutton.onclick = function(e) {
+    e.preventDefault();
+    scrollToTop();
+  }
