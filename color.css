@@ -275,6 +275,7 @@ footer {
 .btn.white button, .btn.white a {
     background-color: #fff;
     color: #1D1D1F;
+    cursor: pointer;
 }
 
 .btn.white:hover button, .btn.white:hover a {
