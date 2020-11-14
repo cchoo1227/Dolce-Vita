@@ -390,6 +390,7 @@ footer {
     height: 100%;
     width: 100%;
     position: relative;
+    right: 30px;
 }
 
 .glide__arrows .glide__arrow {
@@ -827,7 +828,7 @@ mix-blend-mode: difference;
 }
 
 
-.charity-partner-caption button {
+.charity-partner-caption a {
     margin-top: 45px;
     background-color: transparent !important;
     text-align: center;
