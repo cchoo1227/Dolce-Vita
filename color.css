@@ -425,18 +425,27 @@ footer {
     line-height: 39px;
 }
 
-.people .column img {
-    width: 100%;
-    height: 420px;
-    display: block;
+.people .swap-img {
+    position: relative;
     margin-bottom: 15px;
 }
 
-.people .column img {
+.people .swap-img img.bw {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
     width: 100%;
-    height: 380px;
-    display: block;
-    margin-bottom: 15px;
+}
+
+.people .swap-img .bw {
+    z-index: 9999;
+    transition: opacity .3s linear;
+    cursor: pointer;
+}
+
+.people .swap-img .bw:hover {
+    opacity: 0;
 }
 
 .people .desktop .columns:nth-child(2) {
