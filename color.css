@@ -22,6 +22,10 @@ html, body {
     box-shadow: rgba(0, 0, 0, 0.22) 5px 5px 8px;
 }
 
+.contact-seperator {
+    border-top: 1px solid lightgray;
+}
+
 /*text color set by div*/
 /*header compnay name + section header*/
 h1 {
@@ -356,10 +360,6 @@ footer {
 }
 
 /*CAROUSEL*/
-.wallart .container:first-child h6{
-    font-weight: bold;
-}
-
 .carousel.container:nth-child(2) {
     margin-top: 60px;
 }
@@ -377,7 +377,6 @@ footer {
 }
 
 .wallart .container:last-child h6 {
-    font-weight: bold;
     text-align: center;
     margin-bottom: 35px;
 }
